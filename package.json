@@ -13,17 +13,13 @@
     "format": "biome format --write .",
     "check:exports": "turbo run check:exports",
     "check:size": "node scripts/check-size.mjs",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "pnpm turbo build && changeset publish",
+    "bump": "node scripts/bump-versions.mjs",
     "prepare": "husky"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.2",
     "@biomejs/biome": "^2.4.2",
     "@boltzpay/config": "workspace:*",
-    "@changesets/changelog-github": "^0.5.2",
-    "@changesets/cli": "^2.29.8",
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
     "husky": "^9.1.7",
