@@ -3,19 +3,26 @@ title: API Directory
 description: Built-in directory of verified paid API endpoints.
 ---
 
+
 The BoltzPay SDK ships with a built-in directory of 25 verified paid API endpoints across two payment protocols (x402 and L402). All endpoints were confirmed live as of February 2026.
+
 
 <Note>
 The directory is static and bundled with the SDK. Entries may become outdated as endpoints go online or offline. Use the `discover` command or `sdk.discover()` method to probe endpoints in real-time and get live pricing.
 </Note>
 
+
 ---
+
 
 ## Directory entries
 
+
 ### x402 (USDC on-chain)
 
+
 #### Crypto Data
+
 
 | Name | URL | Price | Description |
 |------|-----|-------|-------------|
@@ -29,8 +36,21 @@ The directory is static and bundled with the SDK. Entries may become outdated as
 | Zapper — Token Ranking | `https://public.zapper.xyz/x402/token-ranking` | $0.01 | Trending tokens ranked by swap activity and adoption velocity |
 | Zapper — DeFi Balances | `https://public.zapper.xyz/x402/defi-balances` | $0.01 | DeFi positions (LP, lending, yield) for wallet addresses |
 | Zapper — Transaction History | `https://public.zapper.xyz/x402/transaction-history` | $0.01 | Transaction history with interpretations for wallet addresses |
+| TrollBridge — Bounties | `https://mini-tollbooth.onrender.com/bounties` | $0.02 | Every open bounty for AI agents (aibtc, Taskmarket, Superteam Earn): title, USDC reward, skills, deadline, source URL |
+| TrollBridge — Fresh Bounties | `https://mini-tollbooth.onrender.com/fresh` | $0.02 | Bounties posted in the last 24 hours, same schema as /bounties |
+| TrollBridge — Verdicts | `https://mini-tollbooth.onrender.com/verdicts` | $0.02 | Recently paid bounties with amounts and proof links |
+| TrollBridge — Opportunities | `https://mini-tollbooth.onrender.com/opportunities` | $0.02 | Every open bounty normalized to one schema: title, payout, chain, URL, deadline |
+| TrollBridge — Prices | `https://mini-tollbooth.onrender.com/prices` | $0.02 | Crypto price feed, no API key required |
+| TrollBridge — Enrich | `https://mini-tollbooth.onrender.com/enrich` | $0.05 | Wallet and address intelligence on Base and Solana |
+| TrollBridge — Token Check | `https://mini-tollbooth.onrender.com/token-check` | $0.05 | Token safety scan for AI agents |
+| TrollBridge — Markets | `https://mini-tollbooth.onrender.com/markets` | $0.05 | Live Polymarket odds |
+| TrollBridge — New Pairs | `https://mini-tollbooth.onrender.com/new-pairs` | $0.05 | Newest token listings with thin-liquidity flags |
+| TrollBridge — Gas | `https://mini-tollbooth.onrender.com/gas` | $0.02 | Gas prices per chain: Base, Ethereum, Solana |
+| TrollBridge — Yields | `https://mini-tollbooth.onrender.com/yields` | $0.05 | Best stablecoin yields, DeFiLlama data |
+
 
 #### Utilities
+
 
 | Name | URL | Price | Description |
 |------|-----|-------|-------------|
@@ -38,21 +58,31 @@ The directory is static and bundled with the SDK. Entries may become outdated as
 | Auor — Public Holidays | `https://api.auor.io/open-holidays/v1/public` | $0.01 | Public holiday calendar by country and year |
 | SocioLogic — Cryptographic RNG | `https://rng.sociologic.ai/random/int` | $0.01 | Cryptographically secure random integer |
 | Grapevine — IPFS Gateway | `https://gateway.grapevine.fyi/x402/cid/bafkreib7s7xuwc57wri43lyauwjeyfx3zqyc4ue34td5o7ab6wxp7sbqhm` | $0.01 | IPFS content retrieval via x402 payment gateway |
+| TrollBridge — Models | `https://mini-tollbooth.onrender.com/models` | $0.02 | 107-model AI catalog with per-million-token pricing |
+
 
 #### Research
+
 
 | Name | URL | Price | Description |
 |------|-----|-------|-------------|
 | PubMed Trends | `https://pubmed.sekgen.xyz/api/v1/trends` | $0.01 | Academic publication trends from PubMed |
 | Hugen Scout — Intelligence Report | `https://scout.hugen.tokyo/scout/report` | $0.01 | Multi-source intelligence report from HN, GitHub, npm, PyPI |
+| TrollBridge — Deadlines | `https://mini-tollbooth.onrender.com/deadlines` | $0.02 | Class-action and settlement claim deadlines |
+| TrollBridge — Sweepstakes | `https://mini-tollbooth.onrender.com/sweepstakes` | $0.02 | Free-to-enter sweepstakes worth entering |
+| TrollBridge — Search | `https://mini-tollbooth.onrender.com/search` | $0.05 | Web search returned as JSON, no API key required |
+
 
 #### Dev Tools
+
 
 | Name | URL | Price | Description |
 |------|-----|-------|-------------|
 | Creative-Tim — Shadcn Blocks | `https://x402.creative-tim.com/shadcn-blocks/user-payment` | $0.01 | View Shadcn UI component source code after payment |
 
+
 #### Demo
+
 
 | Name | URL | Price | Description |
 |------|-----|-------|-------------|
@@ -61,20 +91,27 @@ The directory is static and bundled with the SDK. Entries may become outdated as
 | BoostPass Ping | `https://boostpass.qrbase.xyz/api/x402/ping` | $0.01 | Simple ping with payment confirmation and sender address |
 | SkillfulAI — Demo Premium | `https://api-dev.agents.skillfulai.io/api/x402/demo/mainnet/premium` | $0.01 | Demo premium endpoint with payment verification details |
 
+
 ### L402 (Bitcoin Lightning)
 
+
 #### Crypto Data
+
 
 | Name | URL | Price | Description |
 |------|-----|-------|-------------|
 | Satring — Analytics | `https://satring.com/api/v1/analytics` | 100 sats | Bitcoin and Lightning network analytics (90 services, categories, pricing) |
 | Satring — Service Reputation | `https://satring.com/api/v1/services/lightning-faucet-fortune/reputation` | 100 sats | Detailed reputation report for L402 services (replace slug in URL) |
 
+
 ---
+
 
 ## Categories
 
+
 The directory organizes endpoints into 5 categories:
+
 
 | Category | Description | x402 | L402 | Total |
 |----------|-------------|------|------|-------|
@@ -84,13 +121,18 @@ The directory organizes endpoints into 5 categories:
 | `research` | Academic and intelligence reports | 2 | 0 | 2 |
 | `dev-tools` | UI components and developer resources | 1 | 0 | 1 |
 
+
 ---
+
 
 ## Programmatic access
 
+
 ### `API_DIRECTORY`
 
+
 The full directory as a readonly array of `ApiDirectoryEntry` objects.
+
 
 ```ts
 import { API_DIRECTORY } from '@boltzpay/sdk';
@@ -100,7 +142,9 @@ for (const entry of API_DIRECTORY) {
 }
 ```
 
+
 ### `ApiDirectoryEntry`
+
 
 ```ts
 interface ApiDirectoryEntry {
@@ -115,9 +159,12 @@ interface ApiDirectoryEntry {
 }
 ```
 
+
 ### `getDirectoryCategories()`
 
+
 Returns all distinct categories present in the directory.
+
 
 ```ts
 import { getDirectoryCategories } from '@boltzpay/sdk';
@@ -126,9 +173,12 @@ const categories = getDirectoryCategories();
 // ["crypto-data", "utilities", "demo", "research", "dev-tools"]
 ```
 
+
 ### `filterDirectory(category?)`
 
+
 Filter the directory by category. Returns the full directory if no category is provided.
+
 
 ```ts
 import { filterDirectory } from '@boltzpay/sdk';
@@ -140,13 +190,18 @@ const all = filterDirectory();
 // Returns all 25 entries
 ```
 
+
 ---
+
 
 ## Live discovery
 
+
 The static directory gives you a starting point, but endpoints can go offline. Use `discover` for real-time probing.
 
+
 ### SDK
+
 
 ```ts
 const entries = await sdk.discover({ category: 'crypto-data' });
@@ -158,9 +213,12 @@ for (const entry of entries) {
 }
 ```
 
+
 Results are sorted by status: `live` first, then `offline`, `error`, and `free`.
 
+
 ### CLI
+
 
 ```bash
 # Discover all endpoints
@@ -173,21 +231,29 @@ boltzpay discover -c crypto-data
 boltzpay --json discover -c utilities
 ```
 
+
 ### MCP
 
+
 AI agents can call the `boltzpay_discover` tool:
+
 
 ```
 Use boltzpay_discover with category "crypto-data" to find blockchain data APIs.
 ```
 
+
 ---
+
 
 ## Probe timeout
 
+
 Each endpoint probe has a 5-second timeout (`DISCOVER_PROBE_TIMEOUT_MS = 5000`). Endpoints that do not respond within 5 seconds are marked as `offline` with reason `"Timeout"`.
 
+
 You can pass an `AbortSignal` to cancel all probes early:
+
 
 ```ts
 const controller = new AbortController();
